@@ -1,9 +1,12 @@
 {
-  "name": "dopefolio",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://jackjj1125.github.io",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "compile:scss": "node-sass sass/main.scss css/style.css -w",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
     "compress:css": "node-sass css/style.css css/style.css --output-style compressed",
